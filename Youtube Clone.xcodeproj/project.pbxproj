@@ -13,6 +13,10 @@
 		DBFD546D2600553E00F54F41 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBFD546B2600553E00F54F41 /* Main.storyboard */; };
 		DBFD546F2600554000F54F41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBFD546E2600554000F54F41 /* Assets.xcassets */; };
 		DBFD54722600554000F54F41 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBFD54702600554000F54F41 /* LaunchScreen.storyboard */; };
+		DBFD547B2600556C00F54F41 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFD547A2600556C00F54F41 /* Video.swift */; };
+		DBFD547E2600563C00F54F41 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFD547D2600563C00F54F41 /* Constants.swift */; };
+		DBFD5481260056DA00F54F41 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFD5480260056DA00F54F41 /* Model.swift */; };
+		DBFD548426006E8600F54F41 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFD548326006E8600F54F41 /* Response.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		DBFD546E2600554000F54F41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DBFD54712600554000F54F41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DBFD54732600554000F54F41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBFD547A2600556C00F54F41 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		DBFD547D2600563C00F54F41 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		DBFD5480260056DA00F54F41 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		DBFD548326006E8600F54F41 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +71,10 @@
 				DBFD546E2600554000F54F41 /* Assets.xcassets */,
 				DBFD54702600554000F54F41 /* LaunchScreen.storyboard */,
 				DBFD54732600554000F54F41 /* Info.plist */,
+				DBFD547A2600556C00F54F41 /* Video.swift */,
+				DBFD547D2600563C00F54F41 /* Constants.swift */,
+				DBFD5480260056DA00F54F41 /* Model.swift */,
+				DBFD548326006E8600F54F41 /* Response.swift */,
 			);
 			path = "Youtube Clone";
 			sourceTree = "<group>";
@@ -137,9 +149,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBFD547E2600563C00F54F41 /* Constants.swift in Sources */,
 				DBFD546A2600553E00F54F41 /* ViewController.swift in Sources */,
+				DBFD547B2600556C00F54F41 /* Video.swift in Sources */,
+				DBFD5481260056DA00F54F41 /* Model.swift in Sources */,
 				DBFD54662600553E00F54F41 /* AppDelegate.swift in Sources */,
 				DBFD54682600553E00F54F41 /* SceneDelegate.swift in Sources */,
+				DBFD548426006E8600F54F41 /* Response.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
