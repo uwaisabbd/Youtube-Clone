@@ -2,12 +2,23 @@
 //  Response.swift
 //  Youtube Clone
 //
-//  Created by Uwais junaid abbad on 16/03/21.
+//  Created by Abdul Halim on 16/03/21.
 //
 
 import Foundation
 
-
-struct Response: Decodable {
+struct Response : Decodable {
     
-    var items
+    var items : [Video]?
+    
+    enum CodingKeys : String,CodingKey {
+        case items
+        
+    }
+    
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        
+        self.items = try container.decode([Video].self, forKey: .items)
+    }
+}
