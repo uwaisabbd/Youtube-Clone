@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB48821D26030136003FBC0A /* VideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB48821C26030136003FBC0A /* VideoTableViewCell.swift */; };
+		DB64C3E72604504F008CCDA4 /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB64C3E62604504F008CCDA4 /* CacheManager.swift */; };
+		DB64C3EC26047E98008CCDA4 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB64C3EB26047E98008CCDA4 /* DetailViewController.swift */; };
+		DB64C3F026048688008CCDA4 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB64C3EF26048688008CCDA4 /* WebKit.framework */; };
 		DBFD54662600553E00F54F41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFD54652600553E00F54F41 /* AppDelegate.swift */; };
 		DBFD54682600553E00F54F41 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFD54672600553E00F54F41 /* SceneDelegate.swift */; };
 		DBFD546A2600553E00F54F41 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBFD54692600553E00F54F41 /* ViewController.swift */; };
@@ -20,6 +24,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DB48821C26030136003FBC0A /* VideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTableViewCell.swift; sourceTree = "<group>"; };
+		DB64C3E62604504F008CCDA4 /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
+		DB64C3EB26047E98008CCDA4 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		DB64C3EF26048688008CCDA4 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		DBFD54622600553E00F54F41 /* Youtube Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Youtube Clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBFD54652600553E00F54F41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DBFD54672600553E00F54F41 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,17 +47,72 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB64C3F026048688008CCDA4 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DB4882122602FC9C003FBC0A /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				DBFD547D2600563C00F54F41 /* Constants.swift */,
+				DB64C3E62604504F008CCDA4 /* CacheManager.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		DB4882132602FCBF003FBC0A /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				DBFD546B2600553E00F54F41 /* Main.storyboard */,
+				DBFD54702600554000F54F41 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		DB4882142602FCD8003FBC0A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DBFD548326006E8600F54F41 /* Response.swift */,
+				DBFD5480260056DA00F54F41 /* Model.swift */,
+				DBFD547A2600556C00F54F41 /* Video.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DB4882152602FCE7003FBC0A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DB48821C26030136003FBC0A /* VideoTableViewCell.swift */,
+				DB64C3EB26047E98008CCDA4 /* DetailViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DB4882162602FCF9003FBC0A /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DBFD54692600553E00F54F41 /* ViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		DB64C3EE26048688008CCDA4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DB64C3EF26048688008CCDA4 /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DBFD54592600553E00F54F41 = {
 			isa = PBXGroup;
 			children = (
 				DBFD54642600553E00F54F41 /* Youtube Clone */,
 				DBFD54632600553E00F54F41 /* Products */,
+				DB64C3EE26048688008CCDA4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,17 +127,15 @@
 		DBFD54642600553E00F54F41 /* Youtube Clone */ = {
 			isa = PBXGroup;
 			children = (
+				DB4882162602FCF9003FBC0A /* View Controllers */,
+				DB4882152602FCE7003FBC0A /* Views */,
+				DB4882142602FCD8003FBC0A /* Models */,
+				DB4882132602FCBF003FBC0A /* Storyboards */,
+				DB4882122602FC9C003FBC0A /* Helpers */,
 				DBFD54652600553E00F54F41 /* AppDelegate.swift */,
 				DBFD54672600553E00F54F41 /* SceneDelegate.swift */,
-				DBFD54692600553E00F54F41 /* ViewController.swift */,
-				DBFD546B2600553E00F54F41 /* Main.storyboard */,
 				DBFD546E2600554000F54F41 /* Assets.xcassets */,
-				DBFD54702600554000F54F41 /* LaunchScreen.storyboard */,
 				DBFD54732600554000F54F41 /* Info.plist */,
-				DBFD547A2600556C00F54F41 /* Video.swift */,
-				DBFD547D2600563C00F54F41 /* Constants.swift */,
-				DBFD5480260056DA00F54F41 /* Model.swift */,
-				DBFD548326006E8600F54F41 /* Response.swift */,
 			);
 			path = "Youtube Clone";
 			sourceTree = "<group>";
@@ -150,10 +211,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				DBFD547E2600563C00F54F41 /* Constants.swift in Sources */,
+				DB64C3E72604504F008CCDA4 /* CacheManager.swift in Sources */,
 				DBFD546A2600553E00F54F41 /* ViewController.swift in Sources */,
 				DBFD547B2600556C00F54F41 /* Video.swift in Sources */,
 				DBFD5481260056DA00F54F41 /* Model.swift in Sources */,
 				DBFD54662600553E00F54F41 /* AppDelegate.swift in Sources */,
+				DB48821D26030136003FBC0A /* VideoTableViewCell.swift in Sources */,
+				DB64C3EC26047E98008CCDA4 /* DetailViewController.swift in Sources */,
 				DBFD54682600553E00F54F41 /* SceneDelegate.swift in Sources */,
 				DBFD548426006E8600F54F41 /* Response.swift in Sources */,
 			);
